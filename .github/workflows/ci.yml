@@ -21,7 +21,7 @@ jobs:
         run: npx eslint .
 
       # Crashes (long path)
-      - name: Change directory to long path
+      - name: Make directory with long path
         run: mkdir long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
       - name: Copy files to long path
         run: |
