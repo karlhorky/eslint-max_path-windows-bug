@@ -22,14 +22,14 @@ jobs:
 
       # Crashes (long path)
       - name: Change directory to long path
-        run: mkdir long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+        run: mkdir long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
       - name: Copy files to long path
         run: |
-          cp eslint.config.js long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
-          cp index.js long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
-          cp package.json long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+          cp eslint.config.js long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+          cp index.js long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+          cp package.json long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
       - run: npm install
-        working-directory: long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+        working-directory: long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
       - name: Lint (crashes)
         run: npx eslint .
-        working-directory: long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
+        working-directory: long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\long-path\
