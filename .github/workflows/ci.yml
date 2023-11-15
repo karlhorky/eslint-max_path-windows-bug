@@ -14,6 +14,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+
+      # Working (short path)
       - run: npm install
-      - name: Lint
+      - name: Lint (working)
+        run: npx eslint .
+
+      # Crashes (long path)
+      - name: Change directory to long path
+        run: cd long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/long-path/
+      - run: npm install
+      - name: Lint (crashes)
         run: npx eslint .
